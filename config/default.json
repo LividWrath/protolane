@@ -1,0 +1,42 @@
+{
+  "geoIp": {
+    "name": "geoIP",
+    "key": "geoIP",
+    "apiKey": "@@GEOIP_API_KEY",
+    "requestName": "geoIPRequest"
+  },
+  "monitor": {
+    "name": "monitor"
+  },
+  "monitoringTool": {
+    "name": "monitoringTool",
+    "port": 5000
+  },
+  "ping": {
+    "name": "ping",
+    "key": "ping",
+    "requestName": "pingRequest"
+  },
+  "reverseDns": {
+    "name": "reverseDns",
+    "key": "reverseDns",
+    "requestName": "reverseDnsRequest"
+  },
+  "virusTotal": {
+    "name": "virusTotal",
+    "key": "virusTotal",
+    "apiKey": "@@VIRUS_TOTAL_API_KEY",
+    "requestName": "virusTotalRequest"
+  },
+  "whois": {
+    "name": "whois",
+    "key": "whois",
+    "requestName": "whoisRequest"
+  },
+  "app": {
+    "port": 9000,
+    "ipDefaults": ["geoip", "ping", "virustotal", "reversedns"],
+    "domainDefaults": ["ping","virustotal","whois"],
+    "allFeatures":["geoip", "ping", "virustotal", "reversedns","whois"]
+  }
+}
