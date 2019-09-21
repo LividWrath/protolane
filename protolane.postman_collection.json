@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "668c9a66-c852-4b30-b7da-746f2f5a603f",
+		"name": "protolane",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getDomainOrIpData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\"8.8.8.8\",\n\t\"services\":[\"ping\",\"virustotal\",\"whois\"]\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
