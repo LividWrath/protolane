@@ -32,7 +32,7 @@
     "ping": "^0.2.2",
     "simple-geoip": "^0.1.2",
     "virustotal-api": "^1.1.1",
-    "whois": "^2.11.0"
+    "whois": "^2.13.6"
   },
   "devDependencies": {
     "@swimlane/prettier-config-swimlane": "^2.0.0",
